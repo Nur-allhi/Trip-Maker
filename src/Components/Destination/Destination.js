@@ -1,11 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useParams } from "react-router";
 
 const Destination = () => {
-  return (
-    <div style={{ textAlign: "Center" }}>
-      <h1>Destination page comming soon</h1>
-    </div>
-  );
+  const { riderId } = useParams();
+
+  return <div style={{ textAlign: "Center" }}></div>;
 };
 
 export default Destination;

@@ -15,7 +15,7 @@ function App() {
           <Route path="/home">
             <Home />
           </Route>
-          <Route path="/destination">
+          <Route path="/destination/:riderId">
             <Destination />
           </Route>
           <Route path="/blog">

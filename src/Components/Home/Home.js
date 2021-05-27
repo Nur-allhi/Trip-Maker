@@ -1,36 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import RiderSelection from "../RiderSelection/RiderSelection";
 import "./Home.css";
-import Bus from "../../img/Frame-1.png";
-import Bike from "../../img/Frame.png";
-import Car from "../../img/Frame-2.png";
-import Train from "../../img/Group.png";
+
 const Home = () => {
+  const [rider, setRider] = useState([]);
+  useEffect(() => {
+    fetch(`https://mocki.io/v1/22b6894f-77f5-4f79-884a-b1c439b149cc`)
+      .then((res) => res.json())
+      .then((data) => setRider(data));
+  }, []);
   return (
     <div className="riders-div">
-      <div className="rider">
-        <div className="rider-img">
-          <img src={Bus} alt="" />
-        </div>
-        <p className="rider-name">Bus</p>
-      </div>
-      <div className="rider">
-        <div className="rider-img">
-          <img src={Bike} alt="" />
-        </div>
-        <p className="rider-name">Bike</p>
-      </div>
-      <div className="rider">
-        <div className="rider-img">
-          <img src={Car} alt="" />
-        </div>
-        <p className="rider-name">Car</p>
-      </div>
-      <div className="rider">
-        <div className="rider-img">
-          <img src={Train} alt="" />
-        </div>
-        <p className="rider-name">Train</p>
-      </div>
+      {rider.map((rData) => (
+        <RiderSelection detail={rData}></RiderSelection>
+      ))}
     </div>
   );
 };
