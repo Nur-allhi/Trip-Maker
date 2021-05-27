@@ -1,29 +1,23 @@
-/* * {
-  background-image: url(../../img/Bg.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-} */
 .rider {
-  background-color: rgb(211, 197, 202);
+  background-color: #fcfafa;
   text-align: center;
   padding: 10px;
-  width: 210px;
-  height: 210px;
+  width: 190px;
+  height: 190px;
   border-radius: 10px;
-  border: 2px rgb(165, 133, 133) solid;
+  box-shadow: 5px 10px 18px #b6b2b2;
 }
 .rider img {
-  height: 9rem;
-  width: 12rem;
+  height: 7rem;
+  width: 10rem;
 }
 .rider p {
   font-size: 1.8rem;
 }
 .riders-div {
-  width: 95vw;
-  margin: 200px auto;
-  /* margin-top: 200px; */
+  width: 70vw;
+  margin: 100px auto;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }

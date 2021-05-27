@@ -8,7 +8,7 @@ import Contact from "./Components/Contact/Contact";
 import Login from "./Components/Login/Login";
 function App() {
   return (
-    <div>
+    <div className="bgImage">
       <Router>
         <Header />
         <Switch>

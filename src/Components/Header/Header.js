@@ -1,18 +1,30 @@
 import React from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
+import HeaderImage from "../../img/Urban Riders.png";
 const Header = () => {
   return (
     <div className="header">
-      <nav>
-        <Link to="/home">Home</Link>
-        <Link to="/destination">Destination</Link>
-        <Link to="/blog">Blog</Link>
-        <Link to="/contact">Contact</Link>
-        <Link to="/login">
-          <button to="/login">Login</button>
-        </Link>
-      </nav>
+      <img className="logo" src={HeaderImage} alt="" />
+      <ul className="navElements">
+        <li>
+          <Link to="/home">Home</Link>
+        </li>
+        <li>
+          <Link to="/destination">Destination</Link>
+        </li>
+        <li>
+          <Link to="/blog">Blog</Link>
+        </li>
+        <li>
+          <Link to="/contact">Contact</Link>
+        </li>
+        <li>
+          <Link to="/login">
+            <button to="/login">Login</button>
+          </Link>
+        </li>
+      </ul>
     </div>
   );
 };

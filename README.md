@@ -10,3 +10,12 @@
   1.  Added rider option (home page).
   2.  Created routh paths
   3.  Created Components
+
+## Version-0.2
+
+##### Time: 27 may 12:00pm
+
+#### Feature update:
+
+1.  Background Image seted.
+2.  fakeData maked
