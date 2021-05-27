@@ -1,5 +1,3 @@
-(Data Api) [https://mocki.io/v1/22b6894f-77f5-4f79-884a-b1c439b149cc]
-
 # Trip-Maker
 
 ## Version-0.1
@@ -31,3 +29,13 @@
 1.  Api method implemented.
 2.  getting the rider id in url.
 3.  used params in destination file.
+
+## Version-0.3
+
+##### Time: 27 may 05:50pm
+
+#### Feature update:
+
+1.  Fixed Destination not getting the data
+2.  Fixed the api image issue
+3.  Fixed api speeling mistake

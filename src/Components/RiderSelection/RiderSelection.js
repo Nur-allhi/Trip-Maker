@@ -3,13 +3,14 @@ import { Link } from "react-router-dom";
 import "./RiderSelection.css";
 
 const RiderSelection = (props) => {
-  const { id, name, imgage } = props.detail;
+  const { id, name, image } = props.detail;
+
   return (
     //   className="riders-div"
     <div>
       <div className="rider">
         <div className="rider-img">
-          <img src={imgage} alt="" />
+          <img src={image} alt="" />
         </div>
         <p className="rider-name">{name}</p>
         <Link to={`/destination/${id}`}>
