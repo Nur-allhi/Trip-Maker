@@ -6,17 +6,15 @@ const RiderSelection = (props) => {
   const { id, name, image } = props.detail;
 
   return (
-    //   className="riders-div"
     <div>
-      <div className="rider">
-        <div className="rider-img">
-          <img src={image} alt="" />
+      <Link to={`/destination/${id}`}>
+        <div className="rider">
+          <div className="rider-img">
+            <img src={image} alt="" />
+          </div>
+          <p>{name}</p>
         </div>
-        <p className="rider-name">{name}</p>
-        <Link to={`/destination/${id}`}>
-          <button>Fare</button>
-        </Link>
-      </div>
+      </Link>
     </div>
   );
 };

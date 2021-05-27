@@ -14,12 +14,3 @@
 .rider p {
   font-size: 1.8rem;
 }
-.rider button {
-  height: 30px;
-  width: 80px;
-  color: white;
-  font-size: 20px;
-  border: none;
-  border-radius: 10px;
-  background-color: rgb(231, 12, 12);
-}
