@@ -22,7 +22,7 @@ const Header = () => {
         <li>
           <Link to="/contact">Contact</Link>
         </li>
-        <li>{loggedInUser.displayName}</li>
+        <li>{loggedInUser.displayName || loggedInUser.name}</li>
         {loggedInUser?.email ? (
           <li>
             <Link to="/home">

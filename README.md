@@ -80,3 +80,11 @@
 2. Login page working well.
 3. some sort of moile responsive done.
 4. Here and there some changes.
+
+## Version-0.9
+
+##### Time: 29 may 11:40pm
+
+#### Feature update:
+
+1. Name show feature added in the nav bar.
