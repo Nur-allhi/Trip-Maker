@@ -18,8 +18,7 @@ function App() {
 
   return (
     <userContext.Provider value={[loggedInUser, setLoggedInUser]}>
-      <h3>Email: {loggedInUser.email}</h3>
-      <div className="bgImage">
+      <div>
         <Router>
           <Header />
           <Switch>

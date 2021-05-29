@@ -6,9 +6,9 @@ import {
   createUserWithEmailAndPassword,
   handleFbSignIn,
   handleGoogleSignin,
-  handleSignOut,
   initializeAppLoginFrameWork,
   signInWithEmailAndPassword,
+  handleGithubSignIn,
 } from "./LoginManager";
 
 function Login() {
@@ -27,8 +27,6 @@ function Login() {
     password: "",
     photo: "",
   });
-
-  console.log(user.isSignedIn);
 
   // Taking Data from the input feild:
   const handleBlur = (event) => {
@@ -63,7 +61,12 @@ function Login() {
       handleResponse(res, true);
     });
   };
-
+  // Github sign in:
+  const githubsignIn = () => {
+    handleGithubSignIn().then((res) => {
+      handleResponse(res, true);
+    });
+  };
   // Handle facebook sign n:
   const fbSignIn = () => {
     handleFbSignIn().then((res) => {
@@ -90,30 +93,8 @@ function Login() {
     }
     e.preventDefault();
   };
-
-  // Handle sign out:
-  const signOut = () => {
-    handleSignOut().then((res) => {
-      handleResponse(res, false);
-    });
-  };
   return (
     <div style={{ textAlign: "center" }}>
-      {user.isSignedIn ? (
-        <button onClick={signOut}>Sign out</button>
-      ) : (
-        <button onClick={googleSignIn}>Sign in</button>
-      )}
-      <br />
-      <button onClick={fbSignIn}>Sign in using FB</button>
-      {user.isSignedIn && (
-        <div>
-          <p>Welcome {user.name}</p>
-          <p>Your email: {user.email}</p>
-          <img src={user.photo} alt="" />
-        </div>
-      )}
-      <h1>Our Own Authentication</h1>
       <input
         type="checkbox"
         onChange={() => setNewUser(!newUser)}
@@ -150,13 +131,11 @@ function Login() {
         />
         <br />
         <input type="submit" value={newUser ? "Sign Up" : "Sign in"} />
-      </form>
-      <p style={{ color: "red" }}>{user.error}</p>
-      {user.success && (
-        <p style={{ color: "green" }}>
-          Successfully {newUser ? "created" : "Loged In"} the user
-        </p>
-      )}
+      </form>{" "}
+      <br />
+      <button onClick={googleSignIn}>G-Sign in</button> <br />
+      <button onClick={fbSignIn}>Sign in using FB</button>
+      <button onClick={githubsignIn}>Github</button>
     </div>
   );
 }

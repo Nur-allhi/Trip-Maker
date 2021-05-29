@@ -61,3 +61,11 @@
 1.  Firebase Authentication linked.
 2.  sign in sign out feature added.
 3.  Redirect state added.
+
+## Version-0.7
+
+##### Time: 29 may 04:05pm
+
+#### Feature update:
+
+1. Cleaned some code in login page.

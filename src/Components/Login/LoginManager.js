@@ -31,7 +31,22 @@ export const handleGoogleSignin = () => {
       console.log(error.message);
     });
 };
-
+// Github sign in:
+export const handleGithubSignIn = () => {
+  const provider = new firebase.auth.GithubAuthProvider();
+  return firebase
+    .auth()
+    .signInWithPopup(provider)
+    .then((result) => {
+      /** @type {firebase.auth.OAuthCredential} */
+      var user = result.user;
+      return user;
+      // ...
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+};
 // Facebook sign in:
 export const handleFbSignIn = () => {
   const fbProvider = new firebase.auth.FacebookAuthProvider();
@@ -39,10 +54,9 @@ export const handleFbSignIn = () => {
     .auth()
     .signInWithPopup(fbProvider)
     .then((result) => {
+      console.log(result);
       /** @type {firebase.auth.OAuthCredential} */
-      var credential = result.credential;
-      var accessToken = credential.accessToken;
-      console.log(accessToken);
+      // var credential = result.credential;
       var user = result.user;
       user.success = true;
       return user;
