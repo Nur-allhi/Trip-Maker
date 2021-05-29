@@ -51,3 +51,13 @@
 3.  Cleaned some code.
 4.  Some here and there changes.
 5.  ####Firebase deploy setuped.
+
+## Version-0.6
+
+##### Time: 29 may 01:27pm
+
+#### Feature update:
+
+1.  Firebase Authentication linked.
+2.  sign in sign out feature added.
+3.  Redirect state added.

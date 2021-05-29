@@ -8,15 +8,16 @@ import Contact from "./Components/Contact/Contact";
 import Login from "./Components/Login/Login";
 import { createContext, useState } from "react";
 import NotFound from "./Components/NotFound/NotFound";
+import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
 
-export const RiderContext = createContext();
+export const userContext = createContext();
 
 function App() {
   // Context State:
   const [loggedInUser, setLoggedInUser] = useState({});
 
   return (
-    <RiderContext.Provider value={[loggedInUser, setLoggedInUser]}>
+    <userContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <h3>Email: {loggedInUser.email}</h3>
       <div className="bgImage">
         <Router>
@@ -27,8 +28,10 @@ function App() {
             </Route>
             <Route path="/destination/:riderId">
               <Destination />
+              <PrivateRoute />
             </Route>
             <Route path="/blog">
+              <PrivateRoute />
               <Blog />
             </Route>
             <Route path="/contact">
@@ -46,7 +49,7 @@ function App() {
           </Switch>
         </Router>
       </div>
-    </RiderContext.Provider>
+    </userContext.Provider>
   );
 }
 
