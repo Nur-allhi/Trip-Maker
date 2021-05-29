@@ -1,5 +1,8 @@
+.link-decoration {
+  text-decoration: none;
+}
 .rider {
-  background-color: #fcfafa;
+  background-color: rgb(251, 252, 252);
   text-align: center;
   padding: 10px;
   width: 190px;
@@ -13,4 +16,12 @@
 }
 .rider p {
   font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .rider {
+    width: 190px;
+    height: 190px;
+    margin: 1rem;
+  }
 }

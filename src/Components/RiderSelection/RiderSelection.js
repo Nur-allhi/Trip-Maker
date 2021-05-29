@@ -7,9 +7,9 @@ const RiderSelection = (props) => {
 
   return (
     <div>
-      <Link to={`/destination/${id}`}>
+      <Link className="link-decoration" to={`/destination/${id}`}>
         <div className="rider">
-          <div className="rider-img">
+          <div>
             <img src={image} alt="" />
           </div>
           <p>{name}</p>

@@ -10,6 +10,10 @@ import {
   signInWithEmailAndPassword,
   handleGithubSignIn,
 } from "./LoginManager";
+import GrommetIconsGoogle from "../../img/icon/googleIcon.jsx";
+import FaceBookicon from "../../img/icon/facebook";
+import GithubIcon from "../../img/icon/githubIcon";
+// import GoogleIcon from "../../img/icon/google.png";
 
 function Login() {
   initializeAppLoginFrameWork();
@@ -94,48 +98,66 @@ function Login() {
     e.preventDefault();
   };
   return (
-    <div style={{ textAlign: "center" }}>
-      <input
-        type="checkbox"
-        onChange={() => setNewUser(!newUser)}
-        name="newUser"
-        id=""
-      />
-      <label htmlFor="newUser">New user sign up</label>
-      <form onClick={handleSubmit}>
-        {newUser && (
+    <div>
+      <div className="sign-in-up-form">
+        <form onClick={handleSubmit}>
+          <h4>{newUser ? "Create an account" : "Login"} </h4>
+          {newUser && (
+            <input
+              type="text"
+              onBlur={handleBlur}
+              name="name"
+              placeholder="Your name"
+            />
+          )}
+          <br />
           <input
             type="text"
+            name="email"
             onBlur={handleBlur}
-            name="name"
-            placeholder="Your name"
+            placeholder="Your Email"
+            required
           />
-        )}
-        <br />
+          <br />
+          <input
+            type="password"
+            name="password"
+            onBlur={handleBlur}
+            placeholder="Your Password"
+            required
+          />
+          <br />
+          {/* {newUser && (
+            <input
+              type="password"
+              onBlur={handleBlur}
+              name="name"
+              placeholder="Confrim password"
+            />
+          )} */}
+          <br />
+          <input
+            className="signInUpbtn"
+            type="submit"
+            value={newUser ? "Sign Up" : "Sign In"}
+          />
+          <p onClick={() => setNewUser(!newUser)}>
+            {" "}
+            {newUser
+              ? "Already have account? Login "
+              : "Dont have account? Sign In"}
+          </p>
+        </form>
+      </div>
 
-        <input
-          type="text"
-          name="email"
-          onBlur={handleBlur}
-          placeholder="Your Email"
-          required
-        />
-
-        <br />
-        <input
-          type="password"
-          name="password"
-          onBlur={handleBlur}
-          placeholder="Your Password"
-          required
-        />
-        <br />
-        <input type="submit" value={newUser ? "Sign Up" : "Sign in"} />
-      </form>{" "}
       <br />
-      <button onClick={googleSignIn}>G-Sign in</button> <br />
-      <button onClick={fbSignIn}>Sign in using FB</button>
-      <button onClick={githubsignIn}>Github</button>
+      <div className="otherAuthBtn">
+        <button onClick={googleSignIn}>
+          {GrommetIconsGoogle()} <ion-icon name="person"></ion-icon> Google
+        </button>
+        <button onClick={fbSignIn}>{FaceBookicon()}Facebook</button>
+        <button onClick={githubsignIn}>{GithubIcon()} Github</button>
+      </div>
     </div>
   );
 }

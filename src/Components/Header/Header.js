@@ -22,7 +22,8 @@ const Header = () => {
         <li>
           <Link to="/contact">Contact</Link>
         </li>
-        {loggedInUser.email ? (
+        <li>{loggedInUser.displayName}</li>
+        {loggedInUser?.email ? (
           <li>
             <Link to="/home">
               <button to="/login" onClick={() => setLoggedInUser({})}>

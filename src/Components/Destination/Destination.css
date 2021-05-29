@@ -1,0 +1,61 @@
+.destination {
+  border-top: 1px solid gray;
+  padding: 20px 0 0;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 80vw;
+}
+
+.search-for-destination {
+  background-color: rgb(240, 224, 224);
+  width: 340px;
+  height: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.search-for-destination p {
+  padding-left: 10px;
+}
+.search-for-destination input {
+  width: 300px;
+  height: 40px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+}
+.search-btn {
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.7rem;
+  background-color: rgb(255, 4, 4);
+}
+@media only screen and (max-width: 768px) {
+  .destination {
+    border-top: 1px solid gray;
+    padding: 10px 0 0;
+    margin: 0 auto;
+    flex-direction: column;
+    text-align: center;
+  }
+  .destination img {
+    width: 400px;
+  }
+  .search-for-destination {
+    background-color: rgb(233, 220, 220);
+    width: 110vw;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  .search-for-destination input {
+    margin: 10px;
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid gray;
+    border-radius: 8px;
+  }
+}

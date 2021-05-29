@@ -40,6 +40,7 @@ export const handleGithubSignIn = () => {
     .then((result) => {
       /** @type {firebase.auth.OAuthCredential} */
       var user = result.user;
+
       return user;
       // ...
     })
@@ -71,6 +72,7 @@ export const createUserWithEmailAndPassword = (name, email, password) => {
     .auth()
     .createUserWithEmailAndPassword(email, password)
     .then((res) => {
+      console.log(res.user.displayName);
       const newUserInfo = res.user;
       newUserInfo.error = "";
       newUserInfo.success = true;
@@ -93,6 +95,7 @@ export const signInWithEmailAndPassword = (email, password) => {
       const newUserInfo = res.user;
       newUserInfo.error = "";
       newUserInfo.success = true;
+      console.log(newUserInfo);
       return newUserInfo;
     })
     .catch((error) => {

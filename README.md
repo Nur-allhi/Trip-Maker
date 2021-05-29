@@ -69,3 +69,14 @@
 #### Feature update:
 
 1. Cleaned some code in login page.
+
+## Version-0.8
+
+##### Time: 29 may 11:35pm
+
+#### Feature update:
+
+1. Cleaned some code in login page.
+2. Login page working well.
+3. some sort of moile responsive done.
+4. Here and there some changes.
