@@ -1,6 +1,5 @@
 import "./Header.css";
 import { Link } from "react-router-dom";
-import HeaderImage from "../../img/Urban Riders.png";
 import { useContext } from "react";
 import { userContext } from "../../App";
 
@@ -8,7 +7,7 @@ const Header = () => {
   const [loggedInUser, setLoggedInUser] = useContext(userContext);
   return (
     <div className="header">
-      <img className="logo" src={HeaderImage} alt="" />
+      <h3>Trip Maker</h3>
       <ul className="navElements">
         <li>
           <Link to="/home">Home</Link>

@@ -7,6 +7,6 @@
   height: 100vh;
 } */
 body {
-  background-color: rgb(212, 230, 241);
-  font-family: "Roboto Mono", monospace;
+  font-family: "Roboto Mono", monospace !important;
+  background-color: rgb(142, 200, 236) !important;
 }

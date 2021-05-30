@@ -1,26 +1,10 @@
 .header {
   padding: 30px;
   width: 95vw;
-}
-.navElements button {
-  color: white;
-  height: 40px;
-  width: 100px;
-  font-size: 15px;
-  border: none;
-  border-radius: 10px;
-  background-color: rgb(255, 4, 4);
+  display: flex;
+  justify-content: space-around;
 }
 
-.logo {
-  float: left;
-  width: 200px;
-  padding: 1rem;
-}
-.navElements {
-  text-align: right;
-  color: white;
-}
 .navElements li {
   color: black;
   display: inline;
@@ -33,9 +17,23 @@
   margin-right: 20px;
   padding: 5px;
 }
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
+
+.navElements button {
+  font-family: "Roboto Mono", monospace;
+  color: white;
+  height: 40px;
+  width: 100px;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(255, 4, 4);
+}
 .navElements button:hover {
   background-color: rgb(156, 12, 12);
 }
 
 @media only screen and (max-width: 768px) {
+  .header {
+  }
 }

@@ -2,8 +2,6 @@
 
 ## Version-0.1
 
-##### Time: 26 may 11:30pm
-
 #### Feature update:
 
 - Base created
@@ -13,16 +11,12 @@
 
 ## Version-0.2
 
-##### Time: 27 may 12:00pm
-
 #### Feature update:
 
 1.  Background Image seted.
 2.  fakeData maked.
 
 ## Version-0.3
-
-##### Time: 27 may 01:08pm
 
 #### Feature update:
 
@@ -32,8 +26,6 @@
 
 ## Version-0.4
 
-##### Time: 27 may 05:50pm
-
 #### Feature update:
 
 1.  Fixed Destination not getting the data.
@@ -41,8 +33,6 @@
 3.  Fixed api speeling mistake.
 
 ## Version-0.5
-
-##### Time: 27 may 11:00pm
 
 #### Feature update:
 
@@ -54,8 +44,6 @@
 
 ## Version-0.6
 
-##### Time: 29 may 01:27pm
-
 #### Feature update:
 
 1.  Firebase Authentication linked.
@@ -64,15 +52,11 @@
 
 ## Version-0.7
 
-##### Time: 29 may 04:05pm
-
 #### Feature update:
 
 1. Cleaned some code in login page.
 
 ## Version-0.8
-
-##### Time: 29 may 11:35pm
 
 #### Feature update:
 
@@ -83,8 +67,18 @@
 
 ## Version-0.9
 
-##### Time: 29 may 11:40pm
-
 #### Feature update:
 
 1. Name show feature added in the nav bar.
+
+## Version-1.0
+
+#### Feature update:
+
+1. Here and there changes.
+
+## Version-1.1
+
+#### Feature update:
+
+1. Final release.

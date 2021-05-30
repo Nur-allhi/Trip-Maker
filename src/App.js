@@ -9,6 +9,7 @@ import Login from "./Components/Login/Login";
 import { createContext, useState } from "react";
 import NotFound from "./Components/NotFound/NotFound";
 import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export const userContext = createContext();
 

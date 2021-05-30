@@ -32,6 +32,20 @@
   border-radius: 0.7rem;
   background-color: rgb(255, 4, 4);
 }
+.dropDownMainDiv {
+  align-items: center;
+}
+.dropDownResult {
+  display: flex;
+  flex-direction: column;
+}
+.dropDownResult img {
+  height: 5rem;
+  width: 7rem;
+}
+.dropDownResult p {
+  font-size: 1rem;
+}
 @media only screen and (max-width: 768px) {
   .destination {
     border-top: 1px solid gray;

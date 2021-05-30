@@ -12,13 +12,14 @@
 .sign-in-up-form input {
   border: none;
   padding: 5px;
-  /* border-bottom: 1px solid gray; */
   border-radius: 8px;
   width: 300px;
   height: 2rem;
   margin: 10px 0;
 }
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
 .signInUpbtn {
+  font-family: "Roboto Mono", monospace;
   color: white;
   font-size: 1rem;
   border: none;
@@ -36,7 +37,7 @@
   border: none;
   border-radius: 0.7rem;
   margin: 5px;
-  width: 100px;
+  width: 130px;
   height: 2rem;
   background-color: rgb(247, 243, 243);
 }
