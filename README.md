@@ -1,4 +1,4 @@
-[Live site] (https://trip-maker-e059e.web.app/)
+(Live site) [https://trip-maker-e059e.web.app/]
 
 # Trip-Maker
 
