@@ -1,12 +1,18 @@
-/* .bgImage {
-  background-image: url("./img/Bg.png");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  width: 100vw;
-  height: 100vh;
-} */
 body {
-  font-family: "Roboto Mono", monospace !important;
-  background-color: rgb(142, 200, 236) !important;
+  font-family: "Varela Round", sans-serif !important;
+  /* background-color: rgb(142, 200, 236) !important; */
+  /* background: rgb(17, 153, 142); */
+
+  background-image: linear-gradient(
+    132.6deg,
+    rgba(71, 139, 214, 1) 23.3%,
+    rgba(37, 216, 211, 1) 84.7%
+  );
+  height: 100vh;
+  /* background: linear-gradient(
+    90deg,
+    rgba(17, 153, 142, 1) 0%,
+    rgba(115, 227, 157, 1) 47%,
+    rgba(17, 153, 142, 1) 100%
+  ) !important; */
 }

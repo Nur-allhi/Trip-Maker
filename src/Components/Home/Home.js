@@ -1,7 +1,7 @@
 import React from "react";
+import fakeData from "../../utilities/fakeData";
 import RiderSelection from "../RiderSelection/RiderSelection";
 import "./Home.css";
-import fakeData from "../../utilities/fakeData.json";
 
 const Home = () => {
   return (

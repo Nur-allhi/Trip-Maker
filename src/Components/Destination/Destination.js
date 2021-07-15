@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
+import { DropdownButton } from "react-bootstrap";
 import { useParams } from "react-router";
-import fakeData from "../../utilities/fakeData.json";
 import MapImage from "../../img/Map.png";
+import fakeData from "../../utilities/fakeData.js";
 import "./Destination.css";
-import { Dropdown, DropdownButton } from "react-bootstrap";
 
 const Destination = () => {
   const { riderId } = useParams();
