@@ -1,4 +1,4 @@
-(Live site) [https://trip-maker-e059e.web.app/]
+[Live site](https://trip-maker-e059e.web.app/)
 
 # Trip-Maker
 
@@ -11,3 +11,11 @@ Final Release
 - Icon update
 - Background color changed.
 - card shadow changed.
+
+> Update v-0.2.1:
+
+- Color updated.
+
+> Update v-0.2.1:
+
+- Updated code.
