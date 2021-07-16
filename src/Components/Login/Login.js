@@ -1,19 +1,17 @@
-import "./Login.css";
 import { useContext, useState } from "react";
 import { useHistory, useLocation } from "react-router-dom";
 import { userContext } from "../../App";
+import GithubIcon from "../../img/icon/githubIcon";
+import GrommetIconsGoogle from "../../img/icon/googleIcon.jsx";
+import "./Login.css";
 import {
-  createUserWithEmailAndPassword,
-  handleFbSignIn,
+  createUserWithEmailAndPassword, handleGithubSignIn,
+  // handleFbSignIn,
   handleGoogleSignin,
   initializeAppLoginFrameWork,
-  signInWithEmailAndPassword,
-  handleGithubSignIn,
+  signInWithEmailAndPassword
 } from "./LoginManager";
-import GrommetIconsGoogle from "../../img/icon/googleIcon.jsx";
-import FaceBookicon from "../../img/icon/facebook";
-import GithubIcon from "../../img/icon/githubIcon";
-// import GoogleIcon from "../../img/icon/google.png";
+
 
 function Login() {
   initializeAppLoginFrameWork();
@@ -72,11 +70,11 @@ function Login() {
     });
   };
   // Handle facebook sign n:
-  const fbSignIn = () => {
-    handleFbSignIn().then((res) => {
-      handleResponse(res, true);
-    });
-  };
+  // const fbSignIn = () => {
+  //   handleFbSignIn().then((res) => {
+  //     handleResponse(res, true);
+  //   });
+  // };
 
   // New user / old user :
   const handleSubmit = (e) => {
@@ -155,7 +153,7 @@ function Login() {
         <button onClick={googleSignIn}>
           {GrommetIconsGoogle()} <ion-icon name="person"></ion-icon> Google
         </button>
-        <button onClick={fbSignIn}>{FaceBookicon()}Facebook</button>
+        {/* <button onClick={fbSignIn}>{FaceBookicon()}Facebook</button> */}
         <button onClick={githubsignIn}>{GithubIcon()} Github</button>
       </div>
     </div>

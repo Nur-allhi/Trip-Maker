@@ -1,5 +1,5 @@
-import "firebase/auth";
 import firebase from "firebase/app";
+import "firebase/auth";
 import firebaseConfig from "./Firebase.config";
 
 export const initializeAppLoginFrameWork = () => {
@@ -49,23 +49,23 @@ export const handleGithubSignIn = () => {
     });
 };
 // Facebook sign in:
-export const handleFbSignIn = () => {
-  const fbProvider = new firebase.auth.FacebookAuthProvider();
-  return firebase
-    .auth()
-    .signInWithPopup(fbProvider)
-    .then((result) => {
-      console.log(result);
-      /** @type {firebase.auth.OAuthCredential} */
-      // var credential = result.credential;
-      var user = result.user;
-      user.success = true;
-      return user;
-    })
-    .catch((error) => {
-      console.log(error);
-    });
-};
+// export const handleFbSignIn = () => {
+//   const fbProvider = new firebase.auth.FacebookAuthProvider();
+//   return firebase
+//     .auth()
+//     .signInWithPopup(fbProvider)
+//     .then((result) => {
+//       console.log(result);
+//       /** @type {firebase.auth.OAuthCredential} */
+//       // var credential = result.credential;
+//       var user = result.user;
+//       user.success = true;
+//       return user;
+//     })
+//     .catch((error) => {
+//       console.log(error);
+//     });
+// };
 
 export const createUserWithEmailAndPassword = (name, email, password) => {
   return firebase
